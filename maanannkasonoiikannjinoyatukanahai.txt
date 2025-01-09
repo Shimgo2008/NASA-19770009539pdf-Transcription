@@ -1,0 +1,100 @@
+1,
+
+representation of the Earth’s atmo-
+representation of the earth’s atmo-
+
+geopotential kilometers (km),
+geopotential kilometers (km'),
+
+especially for heights below 20 km,
+especially for heights below 20 km',
+
+For heights from 51 km to 84.852 km
+For heights from 51 km' to 84.852 km'
+
+ndividual gas species (Colegrove et al., 1965; Keneshea and Zimmerman, 1970),
+ndividual gas species (Colegrove et al. 1965; Keneshea and Zimmerman 1970),
+
+
+2,
+
+endpoint value of the preceding function,
+end-point value of the preceding function,
+
+1.1 INTERANTIONAL SYSTEM OF UNITS
+1.1 INTERNATIONAL SYSTEM OF UNITS
+
+as well as of the nonstandard metric
+as well as of the non-standard metric
+
+presented \n in Table 1.
+presented \n in table 1.
+
+1.2.1 Adopted Constants.
+1.2.1 ADOPTED CONSTANTS.
+
+For purposes of computation, it is necessary
+For purposes of computation it is necessary
+
+to the Earth’s atmosphere.
+to the earth’s atmosphere.
+
+Some of these may be multivalued,
+Some of these may be multi-valued,
+
+as in the case of M, representing
+as in the case of $M_i$ representing
+
+molecular weight of the i-th gas
+molecular weight of the ith gas
+
+single-valued and one multivalued
+single-valued and one multi-valued constant. Category  ~  category I Constants k
+
+\(k = 1.380622 \times 10^{-23} \, \mathrm{Nm/K}\),
+\(k = 1.380622 \times 10^{-23} \, \mathrm{N\cdot m/K}\),
+
+equal to the ratio $\frac{R^*}{N_A}$,
+equal to the ratio $R^*/N_A$,
+
+as cited by Mechtley (1973).
+as cited by Mechtley (1973).The set of values  ~  Pure and Applied Chemistry.
+
+
+3,
+
+fractional-volume concentrations $F_i$, listed in Table 3, is
+fractional-volume concentrations $F_i$ listed in table 3 is
+
+modifications based upon CO2
+modifications which are based upon $CO_2$
+
+of gravity adopted \n for this Standard.
+of gravity adopted \n for this Standard. This value is the  ~  latitude of 45° 32' 33".
+
+constant $g_0'$,
+constant $g_0'$ %もっとクオーテーションの位置を右にずらしなさい。みつを
+
+meter to geometric height,
+meter to geometric height
+
+geopotential-height values $H_b$, listed in Table 4,
+geopotential-height values $H_b$ listed in table 4
+
+values of $H_b$ and $L_{M,b}$ are
+values of $H_b$ and $L_{Mb}$ are %わんちゃん書き方間違えてるかもしれんけどmとbの間に,がいらないよってことです。みつを
+
+two values of both $H_b$,
+two values of both $H_b$
+
+gradients $L_{M,b} = \frac{dT}{dH}$
+gradients $L_{M,b} = $dT_M/dH$
+
+listed in Table 4 represents the
+listed in table 4 represents the
+
+The effective Earth’s radius
+The effective earth’s radius
+
+
+4,
