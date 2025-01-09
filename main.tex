@@ -9,6 +9,13 @@
 
 \begin{document}
 
+\begin{center}
+  \section*{PART1}
+  \section*{Defining Constants and Equations}
+\end{center}
+\setcounter{section}{1}
+\setcounter{subsection}{-1}
+\subsection{INTRODUCTION}
 The U.S. Standard Atmosphere, 1976 is an idealized, steady-state representation of the Earth's atmosphere from the surface to 1000 km, as it is assumed to exist in a period of moderate solar activity.\\
 
 For heights from the surface to 51 geopotential kilometers (km), the tables of this standard are identical with those of the U.S. Standard Atmosphere, 1962 (COESA 1962) and are based on traditional definitions.\\
@@ -34,15 +41,14 @@ In spite of the various independent data sets upon which the several temperature
 This total temperature-height profile applied to the fundamental continuity models (i.e., the hydrostatic equation and the equation of motion), along with all the ancillary required constants, coefficients, and functions, defines the U.S. Standard Atmosphere, 1976.\\
 The specification of this definition without any justification in terms of observed data is the purpose of Section 1.\\
 
-\section{International System of Units}
+\subsection{INTERANTIONAL SYSTEM OF UNITS}
 
 The 1976 U. S. Standard Atmosphere is defined in terms of the International System (SI) of Units (Mechtley 1973). \\
 
 A list of the symbols, names, and the related quantities of the applicable basic and derived SI units, as well as of the nonstandard metric units and the English unit employed in this Standard is presented in Table 1.\\
 
-\section{Adopted Constants}
-
-\subsection{Category I Constants}
+\subsection{BASIC ASSUMPTIONS AND FORMULAS}
+\subsubsection{Adopted Constants.}
 
 For purposes of computation, it is necessary to establish numerical values for various constants appropriate to the Earth's atmosphere.\\
 The adopted constants are grouped into three categories.\\
@@ -58,7 +64,7 @@ The Avogadro constant, \(N_A = 6.022169 \times 10^{26} \, \mathrm{kmol}^{-1}\), 
 The gas constant, \(R^* = 8.31432 \times 10^{3} \, \mathrm{N \cdot m / (kmol \cdot K)}\), is consistent with the carbon-12 scale, and is the value used in the 1962 Standard.\\
 This value is not exactly consistent with the cited values of \(k\) and \(N_A\).\\
 
-\subsection{Category II Constants}
+\(Category II Constants\)\\
 
 The set of values of fractional-volume concentrations \(F_i\), listed in Table 3, is assumed to represent the relative concentrations of the several gas species comprising dry air at sea level.\\
 These values are identical to those given in the 1962 Standard (COESA 1962), and except for minor modifications based upon CO2 measurements by Keeling (1960), these values are the same as those given by Glueckauf (1951), and are based upon the earlier work of Paneth (1939).\\
@@ -119,7 +125,7 @@ The quantity \(Z_s\) represents the altitude. The values of \(Z_s\) for \(l\) eq
 
 The quantity \(a_i\) represents a set of six adopted species-dependent thermal-diffusion coefficients listed in Table 6. The quantity \(\sigma^* = (10^{-3}\, \mathrm{K/cm})\) is a term that is chosen as a compromise between the classical “least flux” flux for \(T_{0} \sim 100\) K, with corrections to take into account deviations from a Maxwellian velocity distribution at the critical level, (Brinkman 1971) and the effects of electronic exchange with \(R^+\) and \(O^-\) in the plasmapshere (Tinsley 1970).
 
-\section{1.2.2 EQUILIBRIUM CONDITIONS} 
+\subsubsection{EQUILIBRIUM CONDITIONS} 
 The air is assumed to be dry, and at heights sufficiently below 86 km, the atmosphere is assumed to be homogeneously mixed, with a relative molecular composition leading to a constant mean molecular weight \(M\). \\
 If the air is treated as a perfect gas, the total pressure \(P\), temperature \(T\) and total density \(\rho\) at any point in the atmosphere are related by the equation of state, i.e., the perfect gas law, one form of which is
 
@@ -161,30 +167,83 @@ Under these conditions it is convenient to express the height variations in the 
 \begin{equation}
   n_i \cdot v_i  + D_i \left ( \frac{dn_i}{dz} + \frac{n_i}{T} \cdot \frac{dT}{dz} + \frac{n_i}{M} \cdot \frac{dM}{dz}  + \frac{g \cdot n_i \cdot m_i}{R^* \cdot T}  \right ) + K \left ( \frac{dn_i}{dz} + \frac{n_i}{T} \cdot \frac{dT}{dz}  + \frac{g \cdot n_i \cdot m_i}{R^* \cdot T} \right ) = 0 \tag{6}
 \end{equation}
+The function $K$ is defined differently in each of three height regions:
 
-\section{8 U.S. STANDARD ATMOSPHERE} 
+\begin{enumerate}
+    \item For $86 \leq Z < 95$ km,
+    \[
+    K = K_7 = 1.2 \times 10^2 \, \text{m}^2/\text{s} \tag{7a}
+    \]
 
-The acceleration due to gravity is denoted by \(g\) and is defined as the magnitude of \(g\); that is,
+    \item For $95 \leq Z < 115$ km,
+    \[
+    K = K_7 \cdot \exp\left[1 - \frac{400}{400 - (Z - 95)^2}\right] \tag{7b}
+    \]
+
+    \item For $115 \leq Z < 1000$ km,
+    \[
+    K = K_{10} = 0.0 \, \text{m}^2/\text{s} \tag{7c}
+    \]
+\end{enumerate}
+
+The function $D_i$ is defined by
+\[
+D_i = \frac{a_i}{\Sigma n_i} \cdot \left(\frac{T}{273.15}\right)^{b_i} \tag{8}
+\]
+
+where $a_i$ and $b_i$ are the species-dependent constants defined in Table 6, while $T$ and $\Sigma n_i$ are both altitude-dependent quantities which are specified in detail below. The values of $D_i$, determined from these altitude-dependent quantities and the defined constants $a_i$ and $b_i$, are plotted in Figure 1 as a function of altitude, for each of four species, O, O$_2$, Ar, and He. The value of $D_i$ for atomic hydrogen, for heights just below 150 km, is also shown in Figure 1. This same figure contains a graph of $K$ as a function of altitude. It is apparent that, for heights sufficiently below 90 km, values of $D_i$ are negligible compared with $K$, while above 115 km, the reverse is true. In addition, it is known that the flux velocity $v_i$ for the various species becomes negligibly small at altitudes sufficiently below 90 km.\\
+
+The information regarding the relative magnitudes $V_i$, $D_i$, and $K$ permits us to consider the application of eq (6) in each of several regimes.
+
+One of these regimes is for heights sufficiently below 90 km, such that $v_i$ and $D_i$ are both extremely small compared with $K$. Under these conditions, eq (6) reduces to the following form of the hydrostatic equation:
+
+\[
+\frac{d n_i}{n_i} + \frac{dT}{T} = -\frac{g \cdot M}{R^* \cdot T} \cdot dZ. \tag{9}
+\]
+
+Since the left-hand side of this equation is seen through eq (3) to be equal to $dP_i / P_i$, eq (9) is seen to be the single-gas equivalent to eq (5). Consequently, while eq (6) was designed to describe the assumed equilibrium conditions of individual gases above 86 km, it is apparent that eq (6) also describes such conditions below that altitude, where the partial pressure of each gas comprising the total pressure varies in accordance with the mean molecular weight of the mixture, as well as in accordance with the temperature and the acceleration of gravity. Nevertheless, eq (5), expressing total pressure, represents a convenient step in the development of equations for computing total pressure versus geometric height, when suitable functions are introduced to account for the altitude variation in $T$, $M$, and $g$.
+
+It has been customary in standard-atmosphere calculations, to effectively eliminate the variable portion of the acceleration of gravity from eq (5) by the transformation of the independent variable $Z$ to geopotential altitude $H$, thereby simplifying both the integration of eq (5) and the resulting expression for computing pressure. The relationship between geometric and geopotential altitude depends upon the concept of gravity.
+
+\subsubsection{Gravity and Geopotential Altitude}
+
+Viewed in the ordinary manner, from a frame of reference fixed in the earth, the atmosphere is subject to the force of gravity. The force of gravity is the resultant (vector sum) of two forces:
+\begin{enumerate}
+    \item the gravitational attraction in accordance with Newton's universal law of gravitation, and
+    \item the centrifugal force, which results from the choice of an earthbound, rotating frame of reference.
+\end{enumerate}
+
+The gravity field, being a conservative field, can be derived conveniently from the gravity potential energy per unit mass, that is, from the geopotential $\Phi$. This is given by
+\[
+\Phi = \Phi_G + \Phi_C \tag{10}
+\]
+where $\Phi_G$ is the potential energy, per unit mass, of gravitational attraction, and $\Phi_C$ is the potential energy, per unit mass, associated with the centrifugal force. The gravity, per unit mass, is
+\[
+ \text{g} = \nabla \Phi \tag{11}
+\]
+where $\nabla \Phi$ is the gradient (ascendant) of the geopotential.
+
+The acceleration due to gravity is denoted by \(g\) and is defined as the magnitude of g; that is,
 
 \begin{equation}
- g = |g| = |\nabla \psi|. \tag{12}
+ g = |\text{g}| = |\nabla \phi|. \tag{12}
 \end{equation}
 
-When moving along an external normal from any point on the surface \(\psi_0\), to a point on the surface \(\psi_1+d\psi\), close to the first surface, so that \(\psi_1 = \psi_0 + d\psi\), the incremental work performed by shifting a unit mass from the first surface to the second will be
+When moving along an external normal from any point on the surface \(\phi_0\), to a point on the surface \(\phi_1+d\phi\), close to the first surface, so that \(\phi_1 = \phi_0 + d\phi\), the incremental work performed by shifting a unit mass from the first surface to the second will be
 
 \begin{equation}
- d\psi = g \cdot dZ. \tag{13}
+ d\phi = g \cdot dZ. \tag{13}
 \end{equation}
 
 Hence,
 
 \begin{equation}
- \psi = \int g \cdot dZ . \tag{14}
+ \phi = \int_{0}^{Z} g \cdot dZ . \tag{14}
 \end{equation}
 
 The unit of measurement of geopotential is the standard geopotential meter (m'), which represents the work done by lifting a unit mass 1 geometer meter, through a region in which the acceleration of gravity is uniformly 9.80665 m/s\(^2\). \\
 
-The geopotential \(\psi\) of any point with respect to mean sea level (assumed zero potential), expressed in geopotential meters, is defined as geopotential altitude. \\
+The geopotential \(\phi\) of any point with respect to mean sea level (assumed zero potential), expressed in geopotential meters, is defined as geopotential altitude. \\
 Therefore, geopotential altitude \(H\) is given by
 
 \begin{equation}
@@ -230,7 +289,7 @@ The transformation from Z to H in eq (18) makes it unnecessary to utilize the va
 
 \noindent this low-altitude regime, the two variables \(T\) and \(M\) are combined with the constant \(\bar{M}\), into a single variable \(T_M\), which is then defined as a function of \(H\).
 
-\subsection*{1.2.4 MEAN MOLECULAR WEIGHT.}
+\subsubsection{MEAN MOLECULAR WEIGHT.}
 The mean molecular weight \(\bar{M}\) of a mixture of gases is by definition
 
 \begin{equation}
@@ -259,7 +318,7 @@ Three other properties, dynamic viscosity, kinematic viscosity, and thermal cond
 
 These values are not so simply corrected, however, because of the empirical nature of their respective defining functions. Rather, these quantities must be recalculated, in terms of a suitably corrected set of values of \(T\), if the precision correct values are desired for geometric altitudes between 80 and 86 km.\\
 
-\subsection*{1.2.5 MOLECULAR-SCALE-TEMPERATURE VS. GEOPOTENTIAL ALTITUDE (1.0 to 44.8525 KM)}
+\subsubsection{MOLECULAR-SCALE-TEMPERATURE VS. GEOPOTENTIAL ALTITUDE (1.0 to 44.8525 KM)}
 
 The molecular-scale temperature \(T_M\) (Minzner et al. 1958) at a point is defined as the product of the kinetic temperature \(T\) times the ratio of \(\bar{M}_0\) to \(\bar{M}\), where \(\bar{M}\) is the mean molecular weight of air at that point, and \(\bar{M}_0\) is 28.9644, the mean sea-level value of \(\bar{M}\) discussed above. Analytically,
 \begin{equation}
@@ -277,5 +336,8 @@ When both of these transformations are introduced into (5), and when \(T_M\) is 
 
 with the value of subscript \(b\) ranging from 0 to 6 in accordance with each of seven successive layears.\\
 The value of \(T_{M,b}\) for the first layer (\(b\) = 0) is 288.15\(K\), identucal to \(T_0\), the sea-level value of \(T\), since at this level \(M\) = \(M_0\). With this value of \(T_{M,b}\) defined, and the set of six values of \(H_0\) and the six corresponding value of \(L_{M,b}\) defined in table 4, the function \(T_M\) of \(H\) is completely defined from the surface to \(84.8520 \, \text{km}^{\prime}\) (86 km). A graph of this functionis compared with the similar function of the 1962 Standard in figure 3. From the surface to the \(51-\text{km}^\prime\) altitude, this profile is identical to that of the 1962 Standard. The profile from 51 to \(84.8520 \text{km}^\prime\) was selected by Task Group I, and addreviated table of thermodynamic properties of the atmosphere based upon this profile were published by Kantor and Cole (1973).
+
+\subsubsection{KINETIC TEMPERATURE VERSUS GEOMETRIC ALTTUDE}
+
 
 \end{document}
