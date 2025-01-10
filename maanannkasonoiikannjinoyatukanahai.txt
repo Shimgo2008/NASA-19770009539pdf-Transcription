@@ -98,3 +98,22 @@ The effective earth’s radius
 
 
 4,
+
+ommission for Air Navigation,
+ommission for Air Navigation
+
+of molecules is a quantity that varies
+of molecules is a quantity which varies
+
+Above 85 km, the validity of this value changes.
+Above 85 km the validity of the adopted value  ~  $Category III Constandts$
+
+The quantity a represents
+The quantity $a_i$ represents
+
+coefficient $D_i$ for the related
+coefficient $D_i for$ the related
+
+(See $b_i$ below.)
+(See $b_i$.)
+
