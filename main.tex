@@ -11,490 +11,480 @@
 
 \begin{center}
   \section*{PART1}
-  \section*{Defining Constants and Equations}
+  \section*{定数と方程式の定義}
 \end{center}
 \setcounter{section}{1}
 \setcounter{subsection}{-1}
-\subsection{INTRODUCTION}
-The U.S. Standard Atmosphere, 1976 is an idealized, steady-state representation of the earth’s atmosphere from the surface to 1000 km, as it is assumed to exist in a period of moderate solar activity.\\
+\subsection{はじめに}
+1976年米国標準大気は、地表面から1000kmまでの地球大気を、穏やかな太陽活動期に存在すると仮定した、理想化された定常状態の表現である。
 
-For heights from the surface to 51 geopotential kilometers (km$'$), the tables of this standard are identical with those of the U.S. Standard Atmosphere, 1962 (COESA 1962) and are based on traditional definitions.\\
-These definitions, especially for heights below 20 km$'$, do not necessarily represent an average of the vast amount of atmospheric data available today from observations within that height region.\\
+地表面から51地勢ポテンシャルキロメートル (km') までの高さについては、この標準の表は、1962年米国標準大気（COESA 1962）のものと同一であり、伝統的な定義に基づいている。
+これらの定義は、特に20 km' 未満の高さについては、その高さ領域内の観測から今日利用可能な膨大な量の大気データを必ずしも平均的に表しているとは限らない。
 
-For heights from 51 km$'$ to 84.852 km$'$ (i.e., 51.413 to 86 geometric kilometers), the tables are based upon the averages of present-day atmospheric data as represented by the traditional type of defining parameters.\\
-These include the linearly segmented temperature-height profile, and the assumption of hydrostatic equilibrium, in which the air is treated as a homogeneous mixture of the several constituent gases.\\
+51 km' から 84.852 km' （すなわち、51.413 から 86 幾何キロメートル）までの高さについては、表は、伝統的なタイプの定義パラメータで表される、今日の最新の大気データの平均に基づいている。
+これには、線形に分割された温度-高さプロファイル、および空気がいくつかの構成気体の均質な混合物として扱われる静水圧平衡の仮定が含まれる。
 
-At greater heights, however, where dissociation and diffusion processes produce significant departures from homogeneity, the definitions governing the Standard are more sophisticated than those used at lower altitudes.\\
+ただし、それより高い高度では、解離および拡散プロセスによって均質性からの著しいずれが生じるため、標準を支配する定義は、より低い高度で使用される定義よりも洗練されている。
 
-In this high-altitude regime, the hydrostatic equation, as applied to a mixed atmosphere, gives way to the more general equation for the vertical component of the flux for individual gas species (Colegrove et al. 1965; Keneshea and Zimmerman, 1970), which accounts for the relative change of composition with height.\\
-This flux equation simplifies to the hydrostatic equation for the special case when the atmospheric gases remain well mixed, as is the situation below 86 km.\\
+この高高度領域では、混合大気に適用される静水圧方程式は、個々のガス種のフラックスの垂直成分に対するより一般的な方程式（Colegrove et al. 1965; Keneshea and Zimmerman, 1970）に道を譲り、これは高さに伴う組成の相対的な変化を考慮に入れている。
+このフラックス方程式は、大気ガスが86 km未満の場合のように、十分に混合された状態を維持する場合の特殊なケースでは、静水圧方程式に簡略化される。
 
-The temperature-height profile between 86 and 1000 km is not expressed as a series of linear functions, as at lower altitudes.\\
+86 km から 1000 km の間の温度-高さプロファイルは、低い高度のように、一連の線形関数として表されるわけではない。
 
-Rather, it is defined in terms of four successive functions chosen not only to provide a reasonable approximation to observations, but also to yield a continuous first derivative with respect to height over the entire height regime.\\
+むしろ、観測に対する合理的な近似を提供するだけでなく、高さ領域全体にわたって高さに関して連続的な一次導関数をもたらすように選択された4つの連続する関数によって定義される。
 
-Observational data of various kinds provide the basis for independently determining various segments of this temperature-height profile.\\
-The observed temperatures at heights between 110 and 120 km were particularly important in imposing limits on the selection of the temperature-height function for that region, while the observed densities at 150 km and above strongly influenced the selection of both the temperature and the extent of the low-temperature isothermal layer immediately above 86 km.\\
+さまざまな種類の観測データが、この温度-高さプロファイルのさまざまなセグメントを独立して決定するための基礎となる。
+110 km から 120 km の間の高さで観測された温度は、特にその領域の温度-高さ関数の選択に制限を課す上で重要であり、150 km 以上の観測された密度は、86 km のすぐ上の低温等温層の温度と範囲の両方の選択に強く影響を与えた。
 
-In spite of the various independent data sets upon which the several temperature-height segments are based, it is desirable, for purposes of mathematical reproducibility of the tables of this Standard, to express the temperature in a series of consecutive height functions from the surface to 1000 km, with the expression for each successive function depending upon the end-point value of the preceding function, as well as upon certain terms and coefficients peculiar to the related height interval.\\
+いくつかの独立したデータセットに基づいているにもかかわらず、この標準の表の数学的な再現性の目的のために、地表面から1000 kmまでの一連の連続する高さ関数で温度を表すことが望ましく、各連続する関数の式は、関連する高さ間隔に特有の特定の項と係数だけでなく、先行する関数の終点値に依存する。
 
-This total temperature-height profile applied to the fundamental continuity models (i.e., the hydrostatic equation and the equation of motion), along with all the ancillary required constants, coefficients, and functions, defines the U.S. Standard Atmosphere, 1976.\\
-The specification of this definition without any justification in terms of observed data is the purpose of Section 1.\\
+この合計温度-高さプロファイルは、すべての補助的な必要な定数、係数、および関数とともに、基本的な連続性モデル（すなわち、静水圧方程式と運動方程式）に適用され、1976年の米国標準大気を定義する。
+観測されたデータの観点から正当性を示すことなく、この定義の仕様を示すことが、セクション1の目的である。
 
-\subsection{INTERNATIONAL SYSTEM OF UNITS}
+\subsection{国際単位系}
 
-The 1976 U. S. Standard Atmosphere is defined in terms of the International System (SI) of Units (Mechtley 1973). \\
+1976年の米国標準大気は、国際単位系（SI）（Mechtley 1973）で定義されている。
 
-A list of the symbols, names, and the related quantities of the applicable basic and derived SI units, as well as of the non-standard metric units and the English unit employed in this Standard is presented in table 1.\\
+適用可能な基本および誘導されたSI単位、ならびにこの標準で使用される非標準のメートル単位と英語単位の記号、名前、および関連する量のリストを表1に示す。
 
-\subsection{BASIC ASSUMPTIONS AND FORMULAS}
-\subsubsection{ADOPTED CONSTANTS.}
+\subsection{基本的な仮定と公式}
+\subsubsection{採用された定数}
 
-For purposes of computation it is necessary to establish numerical values for various constants appropriate to the earth's atmosphere.\\
-The adopted constants are grouped into three categories.\\
+計算の目的のために、地球の大気に適切なさまざまな定数の数値を確立する必要がある。
+採用された定数は、3つのカテゴリにグループ化される。
 
-Category I includes those constants which are common to many branches of the physical and chemical sciences, and are here considered to be fundamental constants.\\
-Some of these may be multi-valued, as in the case of $M_i$ representing the molecular weight of the ith gas species.\\
-Category I includes three single-valued and one multivalued constant.\\
+カテゴリIには、物理科学および化学科学の多くの分野に共通する定数が含まれており、ここでは基本的な定数と見なされる。
+これらの定数の中には、$M_i$ が i 番目のガス種の分子量を示す場合のように、多価であるものもある。
+カテゴリIには、3つの単一値定数と1つの多価定数が含まれる。
 
-Category II includes those constants which, in addition to the category I constants and a suitable set of equations, are sufficient to define that portion of the 1976 Standard Atmosphere below 86 km.
+カテゴリIIには、カテゴリIの定数と適切な方程式のセットに加えて、1976年標準大気の86 km未満の部分を定義するのに十分な定数が含まれる。
 
-This category include nine single-valued and three multi-valued constants. Category III includes all the remaining constants which, along with category-I and category-II constants and the related equations plus an expansion of that set, are necessary to define that portion of the 1976 Standard Atmosphere above $86 \, \text{km}$. This category includes $7$ single-valued and $11$ multi-valued constants.
+このカテゴリには、9つの単一値定数と3つの多価定数が含まれる。カテゴリIIIには、カテゴリIおよびカテゴリIIの定数と関連する方程式に加えて、そのセットの拡張とともに、1976年標準大気の86 kmを超える部分を定義するために必要な残りのすべての定数が含まれる。このカテゴリには、$7$ つの単一値定数と $11$ の多価定数が含まれる。
 
-The constants, with appropriate dimensions and symbols, are listed according to categories in three successive sections of table 2.
+定数は、適切な次元と記号とともに、表2の3つの連続するセクションにカテゴリ別にリストされている。
 
-The definition as well as the authority for the value of each constant is discussed separately from the tabular listing. The multi-valued constants, with one exception, have only their general symbol and dimensions listed in table 2, while the multiple values of these constants, i.e., one value for each of several gas species, or one value for each of several height levels, are listed in tables 4 through 7.
+各定数の値の定義と権威は、表形式のリストとは別に議論されている。多価定数は、1つの例外を除いて、一般的な記号と次元のみが表2にリストされており、これらの定数の複数の値、すなわち、いくつかのガス種ごとの値、またはいくつかの高さレベルごとの値が表4から7にリストされている。
 \\\\
-Discussion of the Adopted Values of the Primarry Constants:
+一次定数の採用値の説明：
 \\\\
-
-$Category I Constants$\\
+カテゴリI定数\\
 
 $k$\\
-The Boltzmann constant, $k = 1.380622 \times 10^{-23} \, \mathrm{Nm/K}$, is theoretically equal to the ratio ${R^*}/{N_A}$, and has a value, consistent with the carbon-12 scale, as cited by Mechtley (1973).\\
+ボルツマン定数 $k = 1.380622 \times 10^{-23} \, \mathrm{Nm/K}$ は、理論的には比 ${R^*}/{N_A}$ に等しく、Mechtley (1973) によって引用された、炭素-12スケールと一致する値を持っている。
 
 $M_i$\\
-The set of values of molecular weights $M_i$ listed in table 3 is based upon the carbon-12 isotope scale was adopted in 1961 $C^{12} = 12$. This scale was adopted in 1961　at The Montreal meeting of the International Union of Pure and Applied Chemistry\\
+表3にリストされている分子量 $M_i$ の値のセットは、1961年に採用された炭素-12同位体スケール $C^{12} = 12$ に基づいている。このスケールは、国際純正・応用化学連合のモントリオール会議で1961年に採用された。
 
 $M_A$\\
-The Avogadro constant, $N_A = 6.022169 \times 10^{26} \, \mathrm{kmol}^{-1}$, is consistent with the carbon-12 scale and is the value cited by Mechtley (1973).\\
+アボガドロ定数 $N_A = 6.022169 \times 10^{26} \, \mathrm{kmol}^{-1}$ は、炭素-12スケールと一致しており、Mechtley (1973) によって引用された値である。
 
 $R^{*}$\\
-The gas constant, $R^* = 8.31432 \times 10^{3} \, \mathrm{N \cdot m / (kmol \cdot K)}$, is consistent with the carbon-12 scale, and is the value used in the 1962 Standard.\\This value is not exactly consistent with the cited values of $k$ and $N_A$.\\
+気体定数 $R^* = 8.31432 \times 10^{3} \, \mathrm{N \cdot m / (kmol \cdot K)}$ は、炭素-12スケールと一致しており、1962年の標準で使用された値である。この値は、$k$ と $N_A$ の引用された値と正確には一致していない。
 
-$Category II Constants$\\
+カテゴリII定数\\
 \\$F_i$\\
-The set of values of fractional-volume concentrations $F_i$ listed in table 3, is assumed to represent the relative concentrations of the several gas species comprising dry air at sea level.\\
-These values are identical to those given in the 1962 Standard (COESA 1962), and except for minor modifications which are based upon $CO_2$ measurements by Keeling (1960), these values are the same as those given by Glueckauf (1951), and are based upon the earlier work of Paneth (1939).\\
+表3にリストされている体積パーセント濃度 $F_i$ の値のセットは、海面での乾燥空気を構成するいくつかのガス種の相対濃度を表すと想定されている。
+これらの値は、1962年の標準（COESA 1962）で与えられた値と同一であり、Keeling（1960）による $CO_2$ 測定に基づいたわずかな修正を除いて、これらの値はGlueckauf（1951）によって与えられた値と同じであり、Paneth（1939）の以前の研究に基づいている。
 \\$g_0$\\
-The quantity $g_0 (= 9.80665 \, \mathrm{m/s^2})$ represents the sea-level value of the acceleration of gravity adopted for this Standard. This value is the one originally adopted by the International Committee on Weights and Measures in 1901 for 45° latitude, and even though it has since been shown to be too high by about five parts in ten thousand (List 1968), this value has persisted in meteorology and in some standard atmospheres as the value associated with 45° latitude, even though it applies more precisely to a latitude of 45° 32' 33".\\
+量 $g_0 (= 9.80665 \, \mathrm{m/s^2})$ は、この標準に採用された重力加速度の海面値を表している。この値は、元々1901年に国際度量衡委員会によって45°緯度で採用されたものであり、約1万分の5高いことが示されているが（List 1968）、この値は、45°32'33" の緯度に正確に適用される場合でも、気象学および一部の標準大気で45°緯度に関連付けられた値として残っている。
 \\$g_0\text{$'$}$\\
-The dimensional constant $g_0\text{$'$}$, selected to relate the standard geopotential meter to geometric height is numerically equal to $g_0$, but with appropriately different dimensions.\\
-This constant implicitly defines one standard geopotential meter as the vertical increment through which one must lift one kilogram to increase its potential energy by 9.80665 joules.\\
-The geometric length of this vertical increment varies inversely with the height-dependent value of $g$.\\
+標準地勢ポテンシャルメートルを幾何高度に関連付けるために選択された次元定数 $g_0\text{$'$}$ は、数値的には $g_0$ に等しいが、次元は適切に異なる。
+この定数は、暗黙のうちに、1標準地勢ポテンシャルメートルを、1キログラムの潜在エネルギーを9.80665ジュールだけ増加させるために、1キログラムを持ち上げなければならない垂直増分として定義する。
+この垂直増分の幾何学的長さは、$g$ の高さに依存する値に反比例する。
 \\$H_b$\\
-Each of the members of the set of geopotential-height values $H_b$, listed in table 4, represents the base of one of eight successive atmospheric layers.\\
-The pairs of values of $H_b$ and $L_{Mb}$ are based partly on tradition and partly on present-day observations.\\
-The first five of these pairs are identical to those of the first five layers of the 1962 Standard, while the remaining two values of both $H_b$ and $L_{M,b}$ have been newly selected to provide a reasonable fit to the presently available atmospheric data.\\
-The first two values of the related sets have their origin in one of the earliest aeronautical standard atmospheres (Toussaint 1919), and were approximated in the first U.S. Standard Atmosphere (Diehl 1925).\\
+表4にリストされている地勢ポテンシャル高さの値 $H_b$ のセットの各メンバーは、8つの連続する大気層の1つの基部を表している。
+$H_b$ と $L_{Mb}$ の値のペアは、一部は伝統に基づいており、一部は今日の観測に基づいている。
+これらのペアの最初の5つは、1962年の標準の最初の5つの層と同一であり、$H_b$ と $L_{M,b}$ の残りの2つの値は、現在入手可能な大気データへの合理的な適合を提供するように新たに選択されている。
+関連するセットの最初の2つの値は、最も初期の航空標準大気の1つ（Toussaint 1919）に由来し、最初の米国標準大気（Diehl 1925）で近似された。
 \\$L_{M,b}$\\
-Each member of the set of seven gradients $L_{M,b} = dT_M/dH$[i.e., of molecular scale temperature $T_M$ (Minzner and Ripley 1956) with respect to geopotential $H$] listed in table 4 represents the fixed value appropriate throughout its related layer, $H_b$ to $H_{b+1}$.\\
+7つの勾配 $L_{M,b} = dT_M/dH$ [すなわち、地勢ポテンシャル $H$ に関する分子スケール温度 $T_M$（Minzner and Ripley 1956）の勾配] のセットの各メンバー（表4にリスト）は、関連する層全体で適切な固定値を表している。$H_b$ から $H_{b+1}$ まで。
 \\$P_0$\\
-The standard sea-level atmospheric pressure $P_0$ equal to $1.013250 \times 10^{5} \, \mathrm{Pa}$ (or N/m$^2$) was adopted in 1947 in Resolution 164 of the International Meteorological Organization, and corresponds to the pressure exerted by a column of mercury 0.760 m high, having a density of $1.35951 \times 10^{4} \, \mathrm{kg/m^3}$ and subject to an acceleration due to gravity of $9.80665 \, \mathrm{m/s^2}$.
-This equivalency definition was adopted by the International Commission on Weights and Measures in 1948.\\
+標準海面大気圧 $P_0$ は、$1.013250 \times 10^{5} \, \mathrm{Pa}$ (または N/m$^2$) に等しく、1947年に国際気象機関の決議164で採用され、高さ 0.760 m の水銀柱によって及ぼされる圧力に対応し、その密度は $1.35951 \times 10^{4} \, \mathrm{kg/m^3}$ であり、重力加速度は $9.80665 \, \mathrm{m/s^2}$ である。
+この同等性の定義は、1948年に国際度量衡委員会によって採用された。
 \\$r_0$\\
-The effective Earth's radius for purposes of calculating geopotential at any latitude is readily obtained from equations given by Harrison (1968).\\
-The value of $r_0 (= 6356.766 \, \mathrm{km})$ used in this Standard corresponds to the latitude for which $g = 9.80665 \, \mathrm{m/s^2}$.\\
+任意の緯度で地勢ポテンシャルを計算する目的のための有効な地球半径は、Harrison（1968）によって与えられた方程式から容易に得られる。
+この標準で使用される $r_0 (= 6356.766 \, \mathrm{km})$ の値は、$g = 9.80665 \, \mathrm{m/s^2}$ の緯度に対応する。
 \\$T_0$\\
-The standard sea-level temperature $T_0$ is $288.15 \, \mathrm{K}$.\\
-This value is based upon two international agreements.\\
-The first of these is Resolution 192 of the International Commission for Air Navigation, which in 1924 adopted $15^\circ \, \mathrm{C}$ as the sea-level temperature of the International Standard Atmosphere.\\
-This value has been retained unchanged in all known standard atmospheres since that date.\\
-The second agreement is that of the 1954 Tenth General Conference on Weights and Measures, which set the fixed point of the Kelvin temperature scale at the triple-point temperature $273.16 \, \mathrm{K}$, which is 0.01 K above the ice-point temperature at standard sea-level pressure.\\
+標準海面温度 $T_0$ は $288.15 \, \mathrm{K}$ である。
+この値は、2つの国際協定に基づいている。
+これらの最初の協定は、国際航空委員会（International Commission for Air Navigation）の決議192であり、1924年に国際標準大気の海面温度として $15^\circ \, \mathrm{C}$ を採用した。
+この値は、その日以来、既知のすべての標準大気で変更されずに保持されている。
+2番目の協定は、1954年の第10回度量衡に関する会議であり、ケルビン温度スケールの固定点を、標準海面圧での氷点温度より0.01 K高い、三重点温度 $273.16 \, \mathrm{K}$ に設定した。
 \\$S$\\
-The Sutherland constant, $S = 110 \, \mathrm{K}$, (Hilsenrath et al. 1955) is a constant in the empirical expression for dynamic viscosity.\\
+サザーランド定数 $S = 110 \, \mathrm{K}$ (Hilsenrath et al. 1955) は、動粘度の経験式における定数である。
 \\$\beta$\\
-The quantity, $\beta = 1.458 \times 10^{6} \, \mathrm{kg/(s \cdot m \cdot K^{1/2})}$, (Hilsenrath et al. 1955) is a constant in the expression for dynamic viscosity.\\
+量 $\beta = 1.458 \times 10^{6} \, \mathrm{kg/(s \cdot m \cdot K^{1/2})}$ (Hilsenrath et al. 1955) は、動粘度の式における定数である。
 \\$\gamma$\\
-The ratio of specific heat of air at constant pressure to the specific heat of air at constant volume is a dimensionless quantity with an adopted value $\gamma = 1.400$.\\
-This is the value adopted by the Aerological Commission of the International Meteorological Organization, in Toronto in 1948.\\
+一定圧力での空気の比熱と一定体積での空気の比熱の比は、無次元量であり、採用値は $\gamma = 1.400$ である。
+これは、1948年にトロントで開催された国際気象機関の航空委員会によって採用された値である。
 \\$\sigma$\\
-The mean effective collision diameter $\sigma (= 3.65 \times 10^{-10} \, \mathrm{m})$ of molecules is a quantity that varies with gas species and temperature.\\
-The adopted value is assumed to apply in a dry, sea-level atmosphere.\\
-Above 85 km, the validity of the adopted value decreases with increasing altitude (Hirschfelder et al. 1965; Chapman and Cowling 1960) due to the change in atmosperic composition. For this reason the number of significant figures in tabulations of quanities involvoing $\sigma$ is reduced from that used for other tabulated quantities at heights adobe 86 Km.\\
-\\$Category III Constants$\\
+分子の平均有効衝突直径 $\sigma (= 3.65 \times 10^{-10} \, \mathrm{m})$ は、ガス種と温度によって変化する量である。
+採用された値は、乾燥した海面大気に適用されると想定されている。
+85 kmを超える高度では、大気組成の変化により、採用された値の妥当性は高度の上昇とともに低下する（Hirschfelder et al. 1965; Chapman and Cowling 1960）。このため、$\sigma$ を含む量の表における有効数字の数は、86 kmを超える高度で他の表形式の量に使用される数から削減されている。
+\\カテゴリIII定数\\
 \\$a_i$\\
-The quantity $a$ represents a set of five values of species-dependent coefficients listed in table 6. Each of these values is used in a particular function for designating the height-dependent, molecular-diffusion coefficient $D_i$ for the related gas species. (See $b_i$ below.)\\
+量 $a_i$ は、表6にリストされている種に依存する係数の5つの値のセットを表している。これらの値のそれぞれは、関連するガス種の高さに依存する分子拡散係数 $D_i$ を指定するための特定の関数で使用される（下の $b_i$ を参照）。
 \\$b_i$\\
-The quantity $b_i$ represents a set of five values of species-dependent exponents listed in table 6. Each of these values is used, along with the corresponding value of $a_i$, in eq (8) for designating the height-dependent, molecular-diffusion coefficient for the related gas species. The particular values of $a_i$ and $b_i$ adopted for this Standard have been selected to yield a height variation of $D$, assumed to be realistic.\\
+量 $b_i$ は、表6にリストされている種に依存する指数の5つの値のセットを表している。これらの値のそれぞれは、対応する $a_i$ の値とともに、関連するガス種の高さに依存する分子拡散係数を指定するための式 (8) で使用される。この標準に採用された $a_i$ と $b_i$ の特定の値は、$D$ の高さ変動を生成するように選択されている。
 \\$K_7$\\
-The quantity $K_7 = 1.2 \times 10^7 \, \mathrm{m^2/s}$ is the adopted value of the eddy-diffusion coefficient $K$ at $Z_1 = 86 \, \mathrm{km}$ and in the height interval from 86 up to 197 km. Beginning at 91 km and extending up to 115 km, the value of $K$ is defined by eq (7b). At 115 km the value of $K$ equals $K_{10}$.\\
+量 $K_7 = 1.2 \times 10^7 \, \mathrm{m^2/s}$ は、$Z_1 = 86 \, \mathrm{km}$ で、86 から 197 km までの高さ間隔における渦拡散係数 $K$ の採用値である。91 kmから始まり、115 kmまで拡張して、$K$ の値は式 (7b) によって定義される。115 km での $K$ の値は $K_{10}$ に等しい。
 \\$K_{10}$\\
-The quantity $K_{10} = 0.0 \, \text{m}^2/\text{s}$ is the adapted value of the eddy-diffusion coefficient $K$ at $Z_{10} = 120$ and highest for the height interval from 115 km to 1000 $ \text{m}^2/\text{s}$.\\
+量 $K_{10} = 0.0 \, \text{m}^2/\text{s}$ は、$Z_{10} = 120$ で、115 km から 1000 $\text{m}^2/\text{s}$ までの高さ間隔で最も高い渦拡散係数 $K$ の採用値である。
 \\$L_{K,b}$\\
-The two-valued set of gradients $L_{K,b} = dT/dZ$, listed in table 5, was specifically selected for the Standard to represent available observations. Each of these two values of $L_{K,b}$ is associated with the entire extent of a corresponding layer whose base is $Z_b$, where the top is $Z_{b+1}$.\\
+表5にリストされている2値勾配のセット $L_{K,b} = dT/dZ$ は、利用可能な観測値を表すように標準用に特別に選択された。これらの $L_{K,b}$ の2つの値のそれぞれは、$Z_b$ が基部である対応する層の全体の範囲に関連付けられており、上部は $Z_{b+1}$ である。
 \\$n(O)_7$\\
-The quantity $N(O)_7$, (= $8.6 \times 10^{13} \, \text{m}^{-3}$), is the number density of atomic oxygen assigned for this Standard to exist at $Z_7 = 86 \, \text{km}$. This value is used, along with other number densities of atomic oxygen, hydrogen atom, and densities of $N_2$, $O_2$, $Ar$, and $He$ at 86 km. (See Appendix A.)\\
+量 $N(O)_7$, (= $8.6 \times 10^{13} \, \text{m}^{-3}$), は、$Z_7 = 86 \, \text{km}$ に存在するためにこの標準に割り当てられた原子状酸素の数密度である。この値は、86 km での原子状酸素、水素原子の他の数密度、および $N_2$、$O_2$、$Ar$、および $He$ の密度とともに使用される（付録Aを参照）。
 \\$n(H)_{11}$\\
-The quantity, $N(H)_\infty$, (= $1.0 \times 10^{10} \, \text{m}^{-3}$) is the assigned number density of atomic hydrogen at height $Z_\infty = 500 \, \text{km}$, and is used as the reference value in computing the height profile of atomic hydrogen between 150 and 1000 km.\\
+量 $N(H)_\infty$, (= $1.0 \times 10^{10} \, \text{m}^{-3}$) は、高さ $Z_\infty = 500 \, \text{km}$ での原子状水素の割り当てられた数密度であり、150 km から 1000 km の間の原子状水素の高さプロファイルを計算する際の基準値として使用される。
 \\$q_i$\\
-The quantity $q_i$ represents the first set of six species-dependent sets of coefficients or terms (i.e., sets of' $q_i$, $Q_i$, $u_i$, $U_i$, $w_i$, and $W_i$), the corresponding members of all six of which are simultaneously used in an empirical expression [eq(37)] for the vertical transport term $v_i/(D_i+K)$ in the vertical flux equation for the particular gas species. The species-dependent values of all six ssets have been selected for this Standard to adjusted number-density profiles of the related gas species to particular boundary conditions at 150 and 450 $\mathrm{km}$, as well as at 97 $\mathrm{km}$ in the case of atomic oxygen. These boundary conditions all represent observed or assumed average conditions. These six sets of values are listed in tabele 7.\\
+量 $q_i$ は、最初の6つの種に依存する係数または項のセット（すなわち、$q_i$、$Q_i$、$u_i$、$U_i$、$w_i$、および $W_i$ のセット）を表しており、これら6つのセットの対応するメンバーはすべて、特定のガス種の垂直フラックス方程式における垂直輸送項 $v_i/(D_i+K)$ の経験式 [式 (37)] で同時に使用される。これら6つのセットすべての種に依存する値は、関連するガス種の数密度プロファイルを、150 および 450 $\mathrm{km}$、ならびに原子状酸素の場合は 97 $\mathrm{km}$ で特定の境界条件に調整するために、この標準用に選択されている。これらの境界条件はすべて、観測されたまたは想定された平均状態を表している。これらの6つの値のセットは、表7にリストされている。
 \\$Q_i$\\
-The quantity $Q_i$ represents the second set of the six sets of constants described along with $q_i$ adove.\\
+量 $Q_i$ は、$q_i$ adove とともに説明されている6つの定数のセットの2番目のセットを表している。
 \\$T_9$\\
-The quantity $T_9 (=240.0\text{K})$ represents the kinetic temperature at $Z_9 = 110\mathrm{km}$. This temperature has been adopted along with the gradient $L_{\text{K},9}$ (=12K/km) to generate linear segment of $T(Z)$ for this Standard betweem 110 and 120 km. This segment of $T(Z)$ represents a mean of observed temperature-height data for the corresponding height region.\\
+量 $T_9 (=240.0\text{K})$ は、$Z_9 = 110\mathrm{km}$ での運動エネルギーを表す。この温度は、勾配 $L_{\text{K},9}$ (=12K/km) とともに採用され、この標準の110 km から 120 kmの間の $T(Z)$ の線形セグメントを生成する。$T(Z)$ のこのセグメントは、対応する高さ領域の観測された温度と高さのデータの平均を表している。
 \\$T_\infty$\\
-The quantity $T_\infty$ (=1000K)represents the exospheric temperature, i.e., the asymptote which the exponential function representing $T(Z)$ adove about 500 km, where the mean free path exceeds the scale height. The value of $T_\infty$ adopted for this Standard is assumed to represent mean solar conditions.
+量 $T_\infty$ (=1000K) は、外気圏温度、すなわち、平均自由行程がスケール高さを超える約 500 km より上で、$T(Z)$ を表す指数関数が漸近線となる値を表す。この標準用に採用された $T_\infty$ の値は、平均的な太陽状態を表すと想定されている。
 \\$u_i$\\
-THE quantity $u_i$ represents the third set of the six sets of constants described along with $q_i$ adove.
+量 $u_i$ は、$q_i$ adove とともに説明されている6つの定数のセットの3番目のセットを表している。
 \\$U_i$\\
-The quantity $U_i$ represents the fourth set of the six sets of constants described along with $q_i$ adove.
+量 $U_i$ は、$q_i$ adove とともに説明されている6つの定数のセットの4番目のセットを表している。
 \\$w_i$\\
-The quantity $w_i$ represents the fifth set of the six sets of constants described along with $q$ above.
+量 $w_i$ は、上記の $q$ とともに説明されている6つの定数のセットの5番目のセットを表している。
 \\$W_i$\\
-The quantity $W_i$ represents the sixth set of the six sets of constants described along with $q$ above.
+量 $W_i$ は、$q$ とともに説明されている6つの定数のセットの6番目のセットを表している。
 \\$Z_b$\\
-The quantity $Z_b$ represents a set of six values of $Z$ for $b$ equal to 7 through 12. The values $Z_7, Z_8, Z_9$, and $Z_{10}$ correspond successively to the base of successive layers characterized by successive segments of the adopted temperature-height function for this Standard. The fifth value, $Z_{11}$, is the reference height for the atomic hydrogen calculation, while the sixth value, $Z_{12}$, represents the top of the region for which the tabular values of the Standard are given. These six values of $Z_b$, along with the designation of the type of temperature-height function associated with the first four of these values, plus the related value of $L_{K,b}$, for the two segments having a linear temperature-height function, are listed in table 5.\\
+量 $Z_b$ は、$b$ が 7 から 12 に等しい $Z$ の6つの値のセットを表している。値 $Z_7$, $Z_8$, $Z_9$、および $Z_{10}$ は、この標準の採用された温度-高さ関数の連続するセグメントによって特徴付けられる連続する層の基部に対応している。5番目の値 $Z_{11}$ は、原子状水素計算の基準高さであり、6番目の値 $Z_{12}$ は、標準の表形式の値が与えられる領域の上部を表している。これらの $Z_b$ の6つの値は、これらの値の最初の4つに関連付けられた温度-高さ関数のタイプとともに、線形の温度-高さ関数を持つ2つのセグメントの関連する値 $L_{K,b}$ とともに、表5にリストされている。
 \\$a_i$\\
-The quantity $a_i$ represents a set of six adopted species-dependent thermal-diffusion coefficients listed in table 6. The quantity $\sigma^* = (10^{-3}\, \mathrm{K/cm})$ is a term that is chosen as a compromise between the classical “least flux” flux for $T_{0} \sim 100$ K, with corrections to take into account deviations from a Maxwellian velocity distribution at the critical level, (Brinkman 1971) and the effects of electronic exchange with $R^+$ and $O^-$ in the plasmapshere (Tinsley 1970).\\
+量 $a_i$ は、表6にリストされている6つの採用された種に依存する熱拡散係数のセットを表している。量 $\sigma^* = (10^{-3}\, \mathrm{K/cm})$ は、$T_{0} \sim 100$ K の古典的な「最小フラックス」フラックスであり、臨界レベルでのマクスウェル速度分布からの逸脱を考慮に入れる補正（Brinkman 1971）と、プラズマ圏での $R^+$ および $O^-$ との電子交換の影響（Tinsley 1970）を考慮に入れるために選択された項である。
 \\$\phi$\\
-The quantity $\phi$ (= $7.2\times 10^{11}\text{m}^{-2} \cdot \text{s}^{-1}$) for the vertical flux for $T _\infty$ = 1000 K, with corrections to make into account deviations at the critical level (Brink-man 1971), and the effects of charge exchange with $\text{H}^+$ and $\text{O}^+$ in the plasmapshere (Tinsley 1973).
-\subsubsection{EQUILIBRIUM CONDITIONS} 
-The air is assumed to be dry, and at heights sufficiently below 86 km, the atmosphere is assumed to be homogeneously mixed, with a relative molecular composition leading to a constant mean molecular weight $M$. \\
-If the air is treated as a perfect gas, the total pressure $P$, temperature $T$ and total density $\rho$ at any point in the atmosphere are related by the equation of state, i.e., the perfect gas law, one form of which is
+$T _\infty$ = 1000 K の垂直フラックスの量 $\phi$ (= $7.2\times 10^{11}\text{m}^{-2} \cdot \text{s}^{-1}$)。臨界レベルでの偏差を考慮に入れる補正 (Brink-man 1971)、およびプラズマ圏での $\text{H}^+$ および $\text{O}^+$ との電荷交換の影響 (Tinsley 1973)。
+
+\subsubsection{平衡条件}
+空気は乾燥していると仮定され、86 km を十分に下回る高さでは、大気は均一に混合されていると仮定され、一定の平均分子量 $M$ につながる相対分子組成を持つ。
+空気が完全な気体として扱われる場合、大気中の任意の点での全圧力 $P$、温度 $T$、および全密度 $\rho$ は、状態方程式、すなわち完全な気体法則によって関連付けられ、その1つの形式は
 
 \begin{equation}
   P = \frac{\rho \cdot R^* \cdot pT}{M} \tag{1}
 \end{equation}
 
-where $R^*$ is the universal gas constant. \\
-An alternate form of the equation of state, in terms of the total number density $N$ and the Avogadro constant $N_A$, is
+ここで、$R^*$ は普遍気体定数である。
+状態方程式の代替形式は、全数密度 $N$ とアボガドロ定数 $N_A$ を用いて
 
 \begin{equation}
   P = \frac{N \cdot R^* \cdot T}{N_A} \tag{2}
 \end{equation}
 
-This form represents the summation of $P_i$, the partial pressures of the individual gas species, where $P_i$ is related to the number density of the $i$-th gas species in the following expression:
+この形式は、$P_i$ の合計を表しており、これは個々のガス種の分圧であり、$P_i$ は次の式で $i$ 番目のガス種の数密度に関連付けられている：
 
 \begin{equation}
     P_i = n_i \cdot k \cdot T \tag{3}
 \end{equation}
 
-where $k$ is the Boltzmann constant. \\
+ここで、$k$ はボルツマン定数である。
 
-Within the height region of complete mixing, the atmosphere is assumed to be in hydrostatic equilibrium, and to be horizontally stratified so that $dP$, the differential of pressure, is related to $dz$, the differential of geometric height, by the relationship
+完全に混合された高さ領域内では、大気は静水圧平衡状態にあると仮定され、水平方向に成層されているため、圧力の微分 $dP$ は、幾何学的高さの微分 $dz$ に、次の関係によって関連付けられている
 
 \begin{equation}
     dP = -g \cdot \rho \cdot dZ \tag{4}
 \end{equation}
 
-where $g$ is the height-dependent acceleration of gravity. \\
-The relation between eqs (1) and (4) yields another form of the hydrostatic equation, which can be as basis for the low-altitude pressure calculation:
+ここで、$g$ は高さに依存する重力加速度である。
+式 (1) と (4) の関係は、別の形式の静水圧方程式をもたらし、これは低高度圧力計算の基礎となる可能性がある：
 
 \begin{equation}
 d \ln P = \frac{dP}{P} = \frac{-g \cdot M}{R^* \cdot T} \cdot dZ \tag{5}
 \end{equation}
 
-Above 86 km, the hydrostatic equilibrium of the atmosphere gradually breaks down as diffusion and vertical transport of individual gas species lead to the need for a dynamically adjusted model including diffusive separation. \\
-Under these conditions it is convenient to express the height variations in the atmospheric number density in terms of the vertical component of the flux of the molecules of individual gas species (Colgrove et al. 1966). In terms of the $i$-th gas species, this expression is
+86 km を超えると、個々のガス種の拡散と垂直輸送が拡散分離を含む動的に調整されたモデルの必要性につながるため、大気の静水圧平衡は徐々に崩れる。
+これらの条件下では、個々のガス種の分子のフラックスの垂直成分の観点から、大気数密度の高さの変化を表すのが便利である（Colgrove et al. 1966）。$i$ 番目のガス種の観点から、この式は
 
 \begin{equation}
   n_i \cdot v_i  + D_i \cdot \left ( \frac{dn_i}{dz} + \frac{n_i}{T} \cdot \frac{dT}{dz} + \frac{n_i}{M} \cdot \frac{dM}{dz}  + \frac{g \cdot n_i \cdot m_i}{R^* \cdot T}  \right ) + K \cdot \left ( \frac{dn_i}{dz} + \frac{n_i}{T} \cdot \frac{dT}{dz}  + \frac{g \cdot n_i \cdot m_i}{R^* \cdot T} \right ) = 0 \tag{6}
 \end{equation}\\
-where\\
-$v_i$ = the vertical transport velocity of the $i$th species,\\
-$D_i$ = the height-dependent, molecular-diffusion coeffcient of the $i$th species diffusing through $N_2$,\\
-$a_i$ = the thermal-diffusion coeffcient of the $i$th species.\\
-$M_i$ = the molecular weight of th $i$th species,\\
-$M$ = the molecular weight of th gas through wich the $i$th species is diffusing, and\\
-$K$ = the height-dependent, eddy-diffusion coefficient.\\
-\\The function $K$ is defined differently in each of three height regions:\\
-\\ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\\
-\\ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\\
-\\ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\\
-\\ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\\
+ここで\\
+$v_i$ = $i$ 番目の種の垂直輸送速度,\\
+$D_i$ = $N_2$ を通して拡散する $i$ 番目の種の高さに依存する分子拡散係数,\\
+$a_i$ = $i$ 番目の種の熱拡散係数.\\
+$M_i$ = $i$ 番目の種の分子量,\\
+$M$ = $i$ 番目の種が拡散している気体の分子量、および\\
+$K$ = 高さ依存の渦拡散係数。\\
+\\関数 $K$ は、3つの高さ領域のそれぞれで異なる方法で定義される:\\
 \begin{enumerate}
-    \item For $86 \leq Z < 95$ km,
+    \item $86 \leq Z < 95$ km の場合、
     \[
     K = K_7 = 1.2 \times 10^2 \, \text{m}^2/\text{s} \tag{7a}
     \]
 
-    \item For $95 \leq Z < 115$ km,
+    \item $95 \leq Z < 115$ km の場合、
     \[
     K = K_7 \cdot \exp\left[1 - \frac{400}{400 - (Z - 95)^2}\right] \tag{7b}
     \]
 
-    \item For $115 \leq Z < 1000$ km,
+    \item $115 \leq Z < 1000$ km の場合、
     \[
     K = K_{10} = 0.0 \, \text{m}^2/\text{s} \tag{7c}
     \]
 \end{enumerate}
 
-The function $D_i$ is defined by
+関数 $D_i$ は次のように定義される
 \[
 D_i = \frac{a_i}{\Sigma n_i} \cdot \left(\frac{T}{273.15}\right)^{b_i} \tag{8}
 \]
 
-where $a_i$ and $b_i$ are the species-dependent constants defined in table 6, while $T$ and $\Sigma n_i$ are both altitude-dependent quantities which are specified in detail below. The values of $D_i$, determined from these altitude-dependent quantities and the defined constants $a_i$ and $b_i$, are plotted in Figure 1 as a function of altitude, for each of four species, O, O$_2$, Ar, and He. The value of $D_i$ for atomic hydrogen, for heights just below 150 km, is also shown in Figure 1. This same figure contains a graph of $K$ as a function of altitude. It is apparent that, for heights sufficiently below 90 km, values of $D_i$ are negligible compared with $K$, while above 115 km, the reverse is true. In addition, it is known that the flux velocity $v_i$ for the various species becomes negligibly small at altitudes sufficiently below 90 km.\\
+ここで、$a_i$ と $b_i$ は表6で定義されている種に依存する定数であり、$T$ と $\Sigma n_i$ は両方とも高度に依存する量であり、以下で詳細に指定されている。これらの高度に依存する量と定義された定数 $a_i$ と $b_i$ から決定された $D_i$ の値は、4つの種である O、O$_2$、Ar、および He のそれぞれについて、高度の関数として図1にプロットされている。原子状水素の $D_i$ の値も、150 km のすぐ下の高さについて、図1に示されている。この同じ図には、$K$ の高度の関数としてのグラフが含まれている。90 km を十分に下回る高さでは、$D_i$ の値は $K$ と比較して無視できるほど小さく、115 km を超えると、その逆が真であることが明らかである。さらに、さまざまな種のフラックス速度 $v_i$ は、90 km を十分に下回る高度では無視できるほど小さくなることが知られている。
 
-The information regarding the relative magnitudes $V_i$, $D_i$, and $K$ permits us to consider the application of eq (6) in each of several regimes.
+$V_i$、$D_i$、および $K$ の相対的な大きさに関する情報により、いくつかの体制のそれぞれで式 (6) の適用を検討することができる。
 
-One of these regimes is for heights sufficiently below 90 km, such that $v_i$ and $D_i$ are both extremely small compared with $K$. Under these conditions, eq (6) reduces to the following form of the hydrostatic equation:
+これらの体制の1つは、90 km を十分に下回る高さの場合であり、$v_i$ と $D_i$ の両方が $K$ と比較して非常に小さい。これらの条件下では、式 (6) は静水圧方程式の次の形式に簡略化される：
 
 \[
 \frac{d n_i}{n_i} + \frac{dT}{T} = -\frac{g \cdot M}{R^* \cdot T} \cdot dZ. \tag{9}
 \]
 
-Since the left-hand side of this equation is seen through eq (3) to be equal to $dP_i / P_i$, eq (9) is seen to be the single-gas equivalent to eq (5). Consequently, while eq (6) was designed to describe the assumed equilibrium conditions of individual gases above 86 km, it is apparent that eq (6) also describes such conditions below that altitude, where the partial pressure of each gas comprising the total pressure varies in accordance with the mean molecular weight of the mixture, as well as in accordance with the temperature and the acceleration of gravity. Nevertheless, eq (5), expressing total pressure, represents a convenient step in the development of equations for computing total pressure versus geometric height, when suitable functions are introduced to account for the altitude variation in $T$, $M$, and $g$.
+この方程式の左辺は、式 (3) を通して $dP_i / P_i$ に等しいことがわかっているため、式 (9) は式 (5) に相当する単一ガスであることがわかる。したがって、式 (6) は86 km を超える個々のガスの想定される平衡状態を記述するように設計されているが、式 (6) はその高度を下回る状態も記述していることは明らかであり、全体の圧力を構成する各ガスの分圧は、混合物の平均分子量、ならびに温度と重力加速度に応じて変化する。それにもかかわらず、全圧を表す式 (5) は、$T$、$M$、および $g$ の高度変化を考慮に入れるために適切な関数が導入されたときに、幾何学的高さに対する全圧を計算するための方程式の開発における便利なステップを表している。
 
-It has been customary in standard-atmosphere calculations, to effectively eliminate the variable portion of the acceleration of gravity from eq (5) by the transformation of the independent variable $Z$ to geopotential altitude $H$, thereby simplifying both the integration of eq (5) and the resulting expression for computing pressure. The relationship between geometric and geopotential altitude depends upon the concept of gravity.
+標準大気計算では、独立変数 $Z$ を地勢ポテンシャル高度 $H$ に変換することにより、重力加速度の可変部分を式 (5) から効果的に排除し、それにより式 (5) の積分と圧力計算の結果の式を簡略化することが慣例となっている。幾何学的高度と地勢ポテンシャル高度の関係は、重力の概念に依存する。
 
-\subsubsection{Gravity and Geopotential Altitude}
+\subsubsection{重力と地勢ポテンシャル高度}
 
-Viewed in the ordinary manner, from a frame of reference fixed in the earth, the atmosphere is subject to the force of gravity. The force of gravity is the resultant (vector sum) of two forces:
+地球に固定された参照フレームから、通常の方法で見ると、大気は重力の影響を受ける。重力は、次の2つの力の合力（ベクトル和）である。
 \begin{enumerate}
-    \item the gravitational attraction in accordance with Newton's universal law of gravitation, and
-    \item the centrifugal force, which results from the choice of an earthbound, rotating frame of reference.
+    \item ニュートンの万有引力の法則に従った重力引力、および
+    \item 地球に固定された回転参照フレームの選択から生じる遠心力。
 \end{enumerate}
 
-The gravity field, being a conservative field, can be derived conveniently from the gravity potential energy per unit mass, that is, from the geopotential $\Phi$. This is given by
+重力場は保存場であるため、単位質量あたりの重力ポテンシャルエネルギー、つまり地勢ポテンシャル $\Phi$ から導出できると便利である。これは次のように与えられる
 \[
 \Phi = \Phi_G + \Phi_C \tag{10}
 \]
-where $\Phi_G$ is the potential energy, per unit mass, of gravitational attraction, and $\Phi_C$ is the potential energy, per unit mass, associated with the centrifugal force. The gravity, per unit mass, is
+ここで、$\Phi_G$ は重力引力の単位質量あたりのポテンシャルエネルギーであり、$\Phi_C$ は遠心力に関連付けられた単位質量あたりのポテンシャルエネルギーである。単位質量あたりの重力は
 \[
  \text{g} = \nabla \Phi \tag{11}
 \]
-where $\nabla \Phi$ is the gradient (ascendant) of the geopotential.
+ここで、$\nabla \Phi$ は地勢ポテンシャルの勾配（上昇）である。
 
-The acceleration due to gravity is denoted by $g$ and is defined as the magnitude of g; that is,
+重力による加速度は $g$ で表され、$g$ の大きさとして定義される。つまり
 
 \begin{equation}
  g = |\text{g}| = |\nabla \phi|. \tag{12}
 \end{equation}
 
-When moving along an external normal from any point on the surface $\phi_0$, to a point on the surface $\phi_1+d\phi$, close to the first surface, so that $\phi_1 = \phi_0 + d\phi$, the incremental work performed by shifting a unit mass from the first surface to the second will be
+表面 $\phi_0$ 上の任意の点から、最初の表面に近い表面 $\phi_1+d\phi$ 上の点まで外部法線に沿って移動すると、$\phi_1 = \phi_0 + d\phi$ となるため、単位質量を最初の表面から2番目の表面にシフトすることによって行われる増分作業は
 
 \begin{equation}
  d\phi = g \cdot dZ. \tag{13}
 \end{equation}
 
-Hence,
+したがって
 
 \begin{equation}
  \phi = \int_{0}^{Z} g \cdot dZ . \tag{14}
 \end{equation}
 
-The unit of measurement of geopotential is the standard geopotential meter (m'), which represents the work done by lifting a unit mass 1 geometer meter, through a region in which the acceleration of gravity is uniformly 9.80665 m/s$^2$. \\
+地勢ポテンシャルの測定単位は、標準地勢ポテンシャルメートル (m') であり、これは重力加速度が均一に 9.80665 m/s$^2$ である領域を介して、単位質量を 1 ジオメーターメートル持ち上げることで行われる作業を表す。
 
-The geopotential $\phi$ of any point with respect to mean sea level (assumed zero potential), expressed in geopotential meters, is defined as geopotential altitude. \\
-Therefore, geopotential altitude $H$ is given by
+平均海面（ゼロポテンシャルと仮定）に関する任意の点の地勢ポテンシャル $\phi$ は、地勢ポテンシャルメートルで表され、地勢ポテンシャル高度として定義される。
+したがって、地勢ポテンシャル高度 $H$ は次のように与えられる
 
 \begin{equation}
  H = g_0^{-1} \int g \cdot dZ. \tag{15}
 \end{equation}
 
-and is expressed in geopotential meters (m') when the unit geopotential $g_0^{-1}$ is set equal to 9.80665 m'/s$^2$. \\
+単位地勢ポテンシャル $g_0^{-1}$ が 9.80665 m'/s$^2$ に等しく設定されている場合、地勢ポテンシャルメートル (m') で表される。
 
-With geopotential altitude defined as in eq (15), the differential of $H$ ($dH$) may be expressed as
+地勢ポテンシャル高度が式 (15) で定義されている場合、$H$ の微分 ($dH$) は次のように表すことができる
 
 \begin{equation}
  g\cdot dH = g\cdot dZ. \tag{16}
 \end{equation}
 
-This expression is used in eq (5) to reduce the number of variables prior to its integration process by leading to an expression for computing pressure as a function of geopotential height. \\
+この式は、その積分プロセスの前に変数の数を減らすために式 (5) で使用され、地勢ポテンシャル高さの関数として圧力を計算するための式につながる。
 
-The inverse square law of gravitation provides an expression for $g$ as a function of altitude with sufficient accuracy for most model-atmosphere computations:
+万有引力の逆二乗の法則は、$g$ を高度の関数として表す式を提供する。これは、ほとんどのモデル大気計算に十分な精度である
 
 \begin{equation}
  g = g_0 \left( \frac{r_0}{r_0 + Z} \right)^2. \tag{17}
 \end{equation}
 
-where $r_0$ is the effective earth's radius of the Earth at a specific latitude as given by Lambert's equations (List 1963). \\
-Such value of $r_0$ takes into account the centrifugal acceleration at the particular latitude. \\
-For this Standard, the value of $r_0$ is taken as $6.356766 \times 10^6$ m, consistent with the adopted value of $g_0 = 9.80665 \, \text{m/s}^2$ for the sea-level value of the acceleration of gravity. \\
-The variation of $g$ as a function of geometric altitude is depicted in Figure 2.
+ここで、$r_0$ は、ランベルトの方程式 (List 1963) で与えられる特定の緯度での地球の有効半径である。
+このような $r_0$ の値は、特定の緯度での遠心加速度を考慮に入れている。
+この標準では、$r_0$ の値は $6.356766 \times 10^6$ m とされ、重力加速度の海面値として採用された値 $g_0 = 9.80665 \, \text{m/s}^2$ と一致する。
+幾何学的高度の関数としての $g$ の変動を図2に示す。
 
-
-Integration of eq (15), after substitution of eq (17) for $g$, yields
+式 (15) の積分は、$g$ に式 (17) を代入した後、次のようになる
 \begin{equation}
  H = g_0 \cdot \frac{r_0}{g_0 \cdot r_0 + Z} \cdot \frac{r_0 \cdot Z}{r_0 + Z}. \tag{18}
 \end{equation}
-or
+または
 \begin{equation}
  Z = \frac{r_0 \cdot H}{r_0 - H}. \tag{19}
 \end{equation}
 
-where $\gamma = g/g_0 = 1$ m'/m.
+ここで、$\gamma = g/g_0 = 1$ m'/m。
 
-Differences between geopotential altitudes obtained from eq (18) for various values of Z, and those computed from the more complex relationship used in developing the U.S. Standard Atmosphere, 1962, are small. For example, values of H computed from eq (18) are approximately 0.2, 3.4, and 33.5 m greater at 90, 150, and 700 km, respectively, than those obtained from the relationship used in the 1962 Standard.
+Z のさまざまな値について式 (18) から得られた地勢ポテンシャル高度と、1962 年の米国標準大気の開発で使用されたより複雑な関係から計算された地勢ポテンシャル高度の差は小さい。たとえば、式 (18) から計算された H の値は、1962 年の標準で使用された関係から得られた値よりも、90、150、および 700 km でそれぞれ約 0.2、3.4、および 33.5 m 大きい。
 
-The transformation from Z to H in eq (18) makes it unnecessary to utilize the variation of T as well as any variation in M between the surface and 86 km. Also, we have defined a term of H. It is convenient therefore to determine the sea-level value of M as well as the extent of the height dependence of this quantity between the surface and 86 km. Therefor.
+式 (18) の Z から H への変換により、表面から 86 km までの T の変動だけでなく、M の変動を利用する必要がなくなる。また、H の項を定義した。したがって、表面から 86 km までの M の海面値とこの量の高さ依存性の範囲を決定するのが便利である。したがって、この低高度体制では、2つの変数 $T$ と $M$ は定数 $\bar{M}$ と組み合わされ、単一の変数 $T_M$ になり、これは $H$ の関数として定義される。
 
-\noindent this low-altitude regime, the two variables $T$ and $M$ are combined with the constant $\bar{M}$, into a single variable $T_M$, which is then defined as a function of $H$.
-
-\subsubsection{MEAN MOLECULAR WEIGHT.}
-The mean molecular weight $\bar{M}$ of a mixture of gases is by definition
+\subsubsection{平均分子量}
+気体の混合物の平均分子量 $\bar{M}$ は、定義により
 
 \begin{equation}
  \bar{M} = \frac{\sum (n_i \cdot M_i)}{\sum n_i} \tag{20}
 \end{equation}
 
-where $n_i$ and $M_i$ are the number density and defined molecular weight, respectively, of the $i$th gas species. In that part of the atmosphere between the surface and about 86 km altitude, mixing is dominant, and the effect of diffusion and photochemical processes upon $\bar{M}$ is negligible. In this re- gion the fractional composition of species $F_i$ is assumed to remain constant at the defined value $F_i$, and $\bar{M}$ remains constant at its sea-level value $\bar{M}_0$. For these conditions $n_i$ is equal to the product of $F_i$ times the total number density $N$, so that eq (20) may be rewritten as
+ここで、$n_i$ と $M_i$ は、それぞれ $i$ 番目のガス種の数密度と定義された分子量である。表面から約 86 km の高度までの大気の部分では、混合が支配的であり、拡散と光化学プロセスが $\bar{M}$ に及ぼす影響は無視できる。この領域では、種の分数組成 $F_i$ は定義された値 $F_i$ で一定のままであると仮定され、$\bar{M}$ はその海面値 $\bar{M}_0$ で一定のままである。これらの条件では、$n_i$ は $F_i$ と全数密度 $N$ の積に等しいため、式 (20) は次のように書き換えることができる
 
 \begin{equation}
  \bar{M} = \frac{\sum [F_i \cdot N \cdot M_i]}{\sum [F_i \cdot N]} = \frac{\sum [F_i \cdot M_i] \cdot N}{\sum [F_i] \cdot N} = \frac{\sum [F_i \cdot M_i]}{\sum F_i} \tag{21}
 \end{equation}
 
-The right-hand element of this equation results from the process of factoring $N$ out of each term of both the numerator and the denominator of the preceding equation, so that in spite of the altitude dependence of $N$, $\bar{M}$ is seen analytically to equal $\bar{M}_0$ over the entire altitude region of complete mixing.\\
+この方程式の右側の要素は、先行する方程式の分子と分母の両方の各項から $N$ を因数分解するプロセスから生じるため、N の高度依存性にもかかわらず、$\bar{M}$ は分析的に完全な混合の高度領域全体で $\bar{M}_0$ に等しいことがわかる。
 
-When the defined values of $F_i$, and $M_i$ (from table 3) are introduced into eq (21), $\bar{M}_0$ is found to be 28.9644 kg/kmol. At 86 km (84.852 km), however, the defined value of atomic-oxygen number density (8.6 x 10$^{13}$ /m$^3$) is seen in Appendix A to lead to a value of $\bar{M} = 28.9522$ kg/kmol, about 0.04 percent less than $\bar{M}_0$.\\
+定義された $F_i$ と $M_i$ の値（表3から）が式 (21) に導入されると、$\bar{M}_0$ は 28.9644 kg/kmol であることがわかる。ただし、86 km（84.852 km）では、原子状酸素の数密度（8.6 x 10$^{13}$ /m$^3$）の定義された値は、付録 A で $\bar{M} = 28.9522$ kg/kmol の値につながることがわかり、$\bar{M}_0$ よりも約 0.04% 少ない。
 
-To produce a smooth transition from this initial value at sea level to that at 86 km, it has been arbitrarily defined at intervals of 0.5 km for altitudes between 70.000 and 84.852 km, in terms of the ratio $\bar{M} / \bar{M}_0$, as given in table 7. These ratio values have been interpolated from those initially selected for intervals of kinetic temperature between 80 and 86 km to satisfy the boundary conditions of $\bar{M} = \bar{M}_0 = 28.9644$ kg/kmol at 80 km, and $\bar{M} = 28.9522$ at 86 km, and to satisfy a condition of smoothly decreasing first differences in $\bar{M}$ within this height interval of 80 to 86 km.\\
+海面でのこの初期値から 86 km での値へのスムーズな移行を生み出すために、70.000 km から 84.852 km までの高度について、0.5 km 間隔で、表7に示すように、比 $\bar{M} / \bar{M}_0$ の観点から任意に定義されている。これらの比の値は、80 km で $\bar{M} = \bar{M}_0 = 28.9644$ kg/kmol、86 km で $\bar{M} = 28.9522$ の境界条件を満たし、この高さ間隔 80 km から 86 km の範囲で $\bar{M}$ の滑らかに減少する一次差分の条件を満たすように、最初は運動温度の 80 km から 86 km の間隔で選択された値から内挿されている。
 
-These arbitrarily assigned values $\bar{M} / \bar{M}_0$ may be used for correcting a number of parameters of this Standard if the tabulations are to correctly fit the model in the fifth and perhaps in the fourth significant figures within this height region.\\
+これらの任意に割り当てられた値 $\bar{M} / \bar{M}_0$ は、この標準の多くのパラメータを修正するために使用される場合がある。表の記述が、この高さ領域内で5番目、場合によっては4番目の有効数字でモデルに正しく適合するようにする場合である。
 
-This after-the-fact correcting is required because these values of $\bar{M}$ were not included in the program used for computing the tables of this Standard below 86 km, and hence, the tabulations of some of the properties may show a discontinuity of up to 0.04 percent between 85.5 and 86 km. This situation exists particularly for four properties: in addition to molecular weight, i.e., kinetic temperature, total number density, mean free path, and collision frequency.\\
+この事後修正が必要なのは、これらの $\bar{M}$ の値が86 km未満のこの標準の表を計算するために使用されたプログラムに含まれていなかったためであり、したがって、特性の一部は、85.5 km と 86 km の間で最大 0.04% の不連続性を示す場合があるためである。この状況は、特に4つの特性で存在する。分子量、すなわち運動温度、全数密度、平均自由行程、および衝突頻度に加えて。
 
-For these five parameters the discrepancy in the tables between 80 and 86 km can readily be removed by simply multiplying or dividing the tabulated values of $T$, $M$, and $L$ by the corresponding values of $\bar{M} / \bar{M}_0$ from the tabulated values of $\bar{M}$ and dividing by the corresponding values of $\bar{M}_0$.\\
+これらの5つのパラメータについては、80 km と 86 km の間の表の不一致は、表形式の $T$、$M$、および $L$ の値を、表形式の $\bar{M}$ の対応する値で単純に乗算または除算し、$\bar{M}_0$ の対応する値で除算するだけで、簡単になくすことができる。
 
-Three other properties, dynamic viscosity, kinematic viscosity, and thermal conductivity, which are tabulated only for heights below 86 km, have similar discrepancies for heights immediately below 86 km.\\
+動粘度、運動粘度、および熱伝導率の他の3つの特性は、86 km 未満の高さでのみ表形式で示されており、86 km のすぐ下の高さについても同様の不一致がある。
 
-These values are not so simply corrected, however, because of the empirical nature of their respective defining functions. Rather, these quantities must be recalculated, in terms of a suitably corrected set of values of $T$, if the precision correct values are desired for geometric altitudes between 80 and 86 km.\\
+ただし、これらの値は、それぞれの定義関数の経験的な性質のために、それほど簡単に修正できない。むしろ、80 km から 86 km の間の幾何学的高度で精度の高い正しい値が必要な場合は、適切に修正された $T$ の値のセットの観点から、これらの量を再計算する必要がある。
 
-\subsubsection{MOLECULAR-SCALE-TEMPERATURE VS. GEOPOTENTIAL ALTITUDE (1.0 to 44.8525 KM)}
+\subsubsection{分子スケール温度対地勢ポテンシャル高度 (1.0 ~ 44.8525 KM)}
 
-The molecular-scale temperature $T_M$ (Minzner et al. 1958) at a point is defined as the product of the kinetic temperature $T$ times the ratio of $\bar{M}_0$ to $\bar{M}$, where $\bar{M}$ is the mean molecular weight of air at that point, and $\bar{M}_0$ is 28.9644, the mean sea-level value of $\bar{M}$ discussed above. Analytically,
+点での分子スケール温度 $T_M$ (Minzner et al. 1958) は、運動温度 $T$ と $\bar{M}_0$ から $\bar{M}$ への比の積として定義される。ここで、$\bar{M}$ はその点での空気の平均分子量であり、$\bar{M}_0$ は上記の $\bar{M}$ の平均海面値である 28.9644 である。分析的に、
 \begin{equation}
   T_M = T \cdot \frac{\bar{M}_0}{\bar{M}}. \tag{22}
 \end{equation}
 
-When $T$ is expressed in the Kelvin scale, $T_M$ is also expressed in the Kelvin scale.
+$T$ がケルビンスケールで表される場合、$T_M$ もケルビンスケールで表される。
 
-The principle value of the parameter $T_M$ is that it combines the variable portion of $M$ with the variable $T$ into a single new variable, in a manner somewhat similar to the combining of the variable portion of $g$ with $Z$ to form the new variable $H$.\\
-When both of these transformations are introduced into (5), and when $T_M$ is expressed as a linear has an exact integral. Under these conditions, the computation of $P$ versus $H$ becomes a simple process not requiring numerical integration. Traditionaly, standard atmospheres have defined temperatureas a linear function of height to eliminate the need for numerical integration in the computation of pressure versus height. This Standard follows the tradition to heights up to 86km, and the function $T_M$ versus $H$ is expressed as a series of seven successive linear equations. The general form of these linear equation is 
+パラメータ $T_M$ の原則的な値は、$M$ の可変部分を変数 $T$ と組み合わせて、新しい単一の変数にすることであり、変数の $g$ の可変部分と $Z$ を組み合わせて新しい変数 $H$ を形成するのと多少似ている。
+これらの変換の両方が (5) に導入され、$T_M$ が線形として表現される場合、正確な積分を持つ。これらの条件下では、$P$ 対 $H$ の計算は、数値積分を必要としない簡単なプロセスになる。伝統的に、標準大気は、高さに対する圧力を計算する際に数値積分を不要にするために、温度を高さの線形関数として定義してきた。この標準は、最大 86km までの高さの伝統に従い、$T_M$ 対 $H$ の関数は、一連の7つの連続する線形方程式として表される。これらの線形方程式の一般的な形式は
 \begin{equation}
-  T_M = T_{M,b} + L_{M,b}\cdot (H - H_b) 
+  T_M = T_{M,b} + L_{M,b}\cdot (H - H_b)
   \tag{23}
 \end{equation}
 
-with the value of subscript $b$ ranging from 0 to 6 in accordance with each of seven successive layears.\\
-The value of $T_{M,b}$ for the first layer ($b$ = 0) is 288.15$K$, identucal to $T_0$, the sea-level value of $T$, since at this level $M$ = $M_0$. With this value of $T_{M,b}$ defined, and the set of six values of $H_0$ and the six corresponding value of $L_{M,b}$ defined in table 4, the function $T_M$ of $H$ is completely defined from the surface to $84.8520 \, \text{km}^{\prime}$ (86 km). A graph of this functionis compared with the similar function of the 1962 Standard in figure 3. From the surface to the $51-\text{km}^\prime$ altitude, this profile is identical to that of the 1962 Standard. The profile from 51 to $84.8520 \text{km}^\prime$ was selected by Task Group I, and addreviated table of thermodynamic properties of the atmosphere based upon this profile were published by Kantor and Cole (1973).
+ここで、添え字 $b$ の値は、7つの連続するレイヤーのそれぞれに応じて 0 から 6 の範囲である。
+最初のレイヤー ( $b$ = 0) の $T_{M,b}$ の値は 288.15$K$ であり、$T_0$、すなわち $T$ の海面値と同一である。なぜなら、このレベルでは $M$ = $M_0$ であるからである。$T_{M,b}$ のこの値が定義され、表 4 で定義されている $H_0$ の6つの値のセットと、対応する $L_{M,b}$ の6つの値が定義されている場合、$H$ の関数 $T_M$ は、表面から $84.8520 \, \text{km}^{\prime}$ (86 km) まで完全に定義される。この関数のグラフは、図3で1962年標準の同様の関数と比較される。表面から $51-\text{km}^\prime$ 高度まで、このプロファイルは1962年標準のものと同一である。51 から $84.8520 \text{km}^\prime$ までのプロファイルは、タスクグループIによって選択され、このプロファイルに基づいた大気の熱力学的特性の短縮された表がKantor and Cole (1973) によって公開された。
 
-\subsubsection{KINETIC TEMPERATURE VERSUS GEOMETRIC ALTTUDE 0.0 TO 10000km}
-Between the surface and 86-km altitude, kinetic temperature is based upon the defined valued of $T_M$. In the lowest 80 kilometers of tgus region, where $M$ is constant at $M_0$, $T$ is equal to $T_M$ in accordance with (22). Between 80 and 86 km, however, the ratio $M/M_0$ is assumed to decrease from 1.000000 to 0.9995788, as indicated in table 8, such that the values of $T$ corresponding decrease from those of $T_M$. Thous, at $Z_7 = 86$km a form of eq (22) shows that $T_7$ has a value 186.8673 K, i.e, 0.0787 K smaller than that of $T_M$ at tgat height.\\
+\subsubsection{運動温度対幾何高度 0.0 ~ 10000km}
+表面から 86 km の高度の間では、運動温度は $T_M$ の定義された値に基づいている。$M$ が $M_0$ で一定であるこの領域の最低80キロメートルでは、$T$ は (22) に従って $T_M$ に等しい。ただし、80 km と 86 km の間では、比 $M/M_0$ は表 8 に示すように、1.000000 から 0.9995788 まで減少すると想定されており、対応する $T$ の値は $T_M$ の値から減少する。したがって、$Z_7 = 86$km での式 (22) の形式は、$T_7$ が 186.8673 K の値を持つこと、すなわち、tgat 高さでの $T_M$ の値よりも 0.0787 K 小さいことを示している。
 
-AT height above 86km, values of $T_M$ are no longer defined, and geopotential is no longer the primary is defined in terms of four successive functions, each of which is specified in such a way that the first derivative of $T$ with respect to $Z$ is continuous over the entire altiude region, 86 to 1000km. These four functions begin successively at the first four base heights, $Z_b$ listed in table 5, and are designed to represent the following conditions:\\
-\indent A. An isothermal layer from 86 to 91 km;\\
-\indent B. A layer in which $T(Z)$ has the form of an ellipse from 91 to 110km;\\
-\indent C. A constant, pisitive-gradient layer from 110 to 120km; and\\
-\indent D. A layer in which $T$ increases exponen-tially toward an asymptote, as $Z$ in-creases from 120 to 1000km.\\
-86to91km\\
+86km より高い高度では、$T_M$ の値は定義されなくなり、地勢ポテンシャルはもはや主要なものではない。4つの連続する関数の観点から定義されており、これらの関数のそれぞれは、$Z$ に関する $T$ の1次導関数が、86 から 1000km までの高度領域全体で連続的になるように指定されている。これらの4つの関数は、表 5 にリストされている最初の4つの基部高さ $Z_b$ で連続的に始まり、次の条件を表すように設計されている:\\
+\indent A. 86 から 91 km までの等温層。\\
+\indent B. 91 から 110km まで、$T(Z)$ が楕円の形式を持つ層。\\
+\indent C. 110 から 120km までの一定の正勾配層。および\\
+\indent D. $Z$ が 120 から 1000km まで増加するにつれて、$T$ が指数関数的に漸近線に向かって増加する層。
+86から91km\\
 
-For the layer from $Z_7$ = 86km to $Z_8$ = 91km, the temperature-altitude function is defined to be isothermally linear with respect to geometric altitude, so that gradient of $T$ with respect to $Z$ is zero (see table 5). Thus, the standard form of the linear function, which is
+$Z_7$ = 86km から $Z_8$ = 91km までの層の場合、温度-高度関数は、幾何高度に関して等温的に線形であると定義されるため、$Z$ に関する $T$ の勾配はゼロである（表5を参照）。したがって、線形関数の標準形式は
 \begin{equation}
-  T = T_b + L_{M,b}\cdot (Z - Z_b) 
+  T = T_b + L_{M,b}\cdot (Z - Z_b)
   \tag{24}
 \end{equation}
-degeneractes to
+次のように縮退する
 \begin{equation}
   T= T_7 = 186.8673 K
   \tag{25}
 \end{equation}
-and by definition
+定義により
 \begin{equation}
   \frac{dT}{dZ} = 0.0 \text{K/km}
   \tag{26}
 \end{equation}
 
-The value of $T_7$ is derived from one version of eq (22) in which $T_M$ is replaced by $T_{M7}$, a value determine in 1.2.5 adove, and in which $M/M_0$ is replaced by $M_7/M_0$ with a value of 0.8885788 in accrdance with values of $M_0$ and $M_7$ discussed in 1.3.3 below. Since $T$ is defined to be constant for the entire layer, $Z_7$ to $Z_8$, the temperature at $Z_8$ is $T_8 = T_7 = 186.8673$K, and the gradient $dT/dZ$ at $Z_8$ is $L_{K,8} = 0.0\text{K/km}$,the same as for $L_{K,7}$.\\\\
-91 to 110 km
+$T_7$ の値は、式 (22) のあるバージョンから導出され、そこでは $T_M$ が $T_{M7}$ に置き換えられ、1.2.5 adove で決定された値であり、$M/M_0$ が $M_7/M_0$ に置き換えられ、1.3.3 で説明されている $M_0$ と $M_7$ の値に従って、0.8885788 の値を持つ。$T$ は層全体、$Z_7$ から $Z_8$ まで一定であると定義されているため、$Z_8$ での温度は $T_8 = T_7 = 186.8673$K であり、$Z_8$ での勾配 $dT/dZ$ は $L_{K,8} = 0.0\text{K/km}$ であり、$L_{K,7}$ と同じである。\\\\
+91 ~ 110 km
 
-For the layear $Z_8$ = 91 km to $Z_9$ = 110km, the temperature-altitude function is defined to be a segment of an ellipse expressed by
+層 $Z_8$ = 91 km から $Z_9$ = 110km の場合、温度-高度関数は、次のように表される楕円の一部のセグメントであると定義される
 \begin{equation}
   T = T_c + A \cdot \left[ 1 - \left( \frac{Z - Z_8}{a} \right)^2 \right]^{1/2}
   \tag{27}
 \end{equation}
-where
-$T_c = 263.1905$ K, $A = -76.3232$ K, $a = -19.9429$ km, and $Z$ is limited to values from 91 to 110 km.
+ここで
+$T_c = 263.1905$ K, $A = -76.3232$ K, $a = -19.9429$ km, であり、$Z$ は 91 km から 110 km までの値に制限されている。
 
-Eq (27) is derived in Appendix B from the basic equation for an ellipse, to meet the values of $T_s$ and $L_{K,s}$ derived above, as well as the defined values $T_9 = 240.0~\text{K}$, and $L_{K,9} = 12.0~\text{K/km}$, for $Z_9 = 110~\text{km}$.
+式 (27) は、楕円の基本方程式から付録 B で導出され、上記の $T_s$ と $L_{K,s}$ の値、ならびに $Z_9 = 110~\text{km}$ に対する定義された値 $T_9 = 240.0~\text{K}$ と $L_{K,9} = 12.0~\text{K/km}$ を満たす。
 
-The expression for $dT/dZ$ related to Eq (27) is
+式 (27) に関連する $dT/dZ$ の式は
 \[
 \frac{dT}{dZ} = -\frac{A}{a} \left[ \left(\frac{Z - Z_s}{a} \right) \left(1 - \left(\frac{Z - Z_s}{a} \right)^2 \right)^{-1/2} \right]. \tag{28}
 \]
 
-For the layer $Z_9 = 110~\text{km}$ to $Z_{10} = 120~\text{km}$, $T(Z)$ has the form of (24), where subscript 9 is, such that $T_9$ and $L_{K,9}$ are, respectively, the defined quantities $T_9$ and $L_{K,9}$, while $Z$ is limited to the range 110 to 120 km. Thus,
+層 $Z_9 = 110~\text{km}$ から $Z_{10} = 120~\text{km}$ の場合、$T(Z)$ は (24) の形式を持ち、添え字 9 はそのようなものであり、$T_9$ と $L_{K,9}$ はそれぞれ定義された量 $T_9$ と $L_{K,9}$ であり、$Z$ は 110 から 120 km の範囲に制限されている。したがって、
 \[
 T = T_9 + L_{K,9} \, (Z - Z_9) \tag{29}
 \]
-and
+そして
 \[
 \frac{dT}{dZ} = L_{K,9} = 12.0~\text{K/km}. \tag{30}
 \]
 
-Since $dT/dZ$ is constant over the entire layer, $L_{K,10}$, the value of $dT/dZ$ at $Z_{10}$, is identical to $L_{K,9}$, i.e., $12.0~\text{K/km}$, while the value of $T$ at $Z_{10}$ is found from Eq (29) to be $360.0~\text{K}$.
+$dT/dZ$ は層全体で一定であるため、$Z_{10}$ での $dT/dZ$ の値である $L_{K,10}$ は、$L_{K,9}$、つまり $12.0~\text{K/km}$ と同一であり、$Z_{10}$ での $T$ の値は式 (29) から $360.0~\text{K}$ であることがわかる。
 
-120 to 1000 km
+120 ~ 1000 km
 
-For the layer $Z_{10} = 120~\text{km}$ to $Z_{12} = 1000~\text{km}$, $T(Z)$ is defined to have the exponential form (Walker 1965)
+層 $Z_{10} = 120~\text{km}$ から $Z_{12} = 1000~\text{km}$ の場合、$T(Z)$ は指数関数形式 (Walker 1965) を持つと定義される
 \[
 T = T_{12} - (T_{12} - T_{10}) \cdot \exp(-\lambda \, \xi) \tag{31}
 \]
-such that
+そのように
 \[
 \frac{dT}{dZ} = \lambda \cdot (T_{12} - T_{10}) \cdot \left(\frac{r_0 + Z_{10}}{r_0 + Z}\right)^2 \cdot \exp(-\lambda \, \xi) \tag{32}
 \]
-where
+ここで
 \[
 \lambda = \frac{L_{K,12}}{(T_{12} - T_{10})} = 0.01875,
 \]
-and
+そして
 \[
 \xi = \xi(Z) = \left(\frac{Z - Z_{10}}{r_0 + Z_{10}}\right) \cdot (r_0 + Z).
 \]
 
-In the above expressions, $T_{12}$ equals the defined value $1000~\text{K}$. A graph of $T$ versus $Z$ from $0.0$ to $100~\text{km}$ altitude is given in Figure 4. The upper profile of this profile was selected by Task Group III to be consistent with satellite drag data (Jacchia 1971), whike the mid-portion, particularly between 86 and 200 km and the overlap to 450 km was selected by Task Group II (Minzner et al. 1974) to be consistent with observed temperature and satellite observations of composition data (Hedin et al. 1972).
+上記式では、$T_{12}$ は定義された値 $1000~\text{K}$ に等しい。高度 $0.0$ から $100~\text{km}$ までの $T$ 対 $Z$ のグラフを図4に示す。このプロファイルの上のプロファイルは、タスクグループ III によって選択され、衛星ドラッグデータ (Jacchia 1971) と一致するようにされた whike、中央部分、特に 86 km から 200 km の間、および 450 km までのオーバーラップは、観測された温度と組成データの衛星観測 (Hedin et al. 1972) と一致するように、タスクグループ II (Minzner et al. 1974) によって選択された。
 
-\subsection{COMPUTATIONAL EQUATIONS}
+\subsection{計算式}
 
-The tables of this Standard have been computed in two height regions, $0$ to $84.852 \, \text{km}$ (86 km), and $86$ to $1000 \, \text{km}$, because the computations for each region are based on compatible but different sets of initial conditions. These two different sets of initial conditions lead to two different computational procedures. Consequently, the following discussion of computational equations, which is presented according to a series of atmospheric parameters, does not necessarily follow in the order in which the calculation is actually performed for each altitude region. The equations used for computing the various properties of the atmosphere for altitudes below $86 \, \text{km}$ are, with certain noted exceptions, equivalent to those used in the 1962 standard, and the various equations involving $T_m$ came from expressions used in the ARDC Model Atmosphere, 1956 (Minzner and Ripley 1956).\\
+この標準の表は、2つの高さ領域、$0$ から $84.852 \, \text{km}$ (86 km)、および $86$ から $1000 \, \text{km}$ で計算されている。各領域の計算は、互換性のある異なる初期条件のセットに基づいているためである。これらの2つの異なる初期条件のセットは、2つの異なる計算手順につながる。その結果、一連の大気パラメータに従って提示される計算式に関する次の説明は、各高度領域で実際に実行される計算の順序に必ずしも従わない。86 km 未満の高度の大気のさまざまな特性を計算するために使用される式は、特定の例外を除いて、1962 年の標準で使用された式と同等であり、$T_m$ を含むさまざまな式は、ARDC モデル大気、1956 (Minzner and Ripley 1956) で使用された式から来ている。
 
-\subsubsection{PRESSURE}
+\subsubsection{圧力}
 
-Three different equations are used for computing pressure $P$ in various height regimes of this Standard. One of these equations applies to heights above $86 \, \text{km}$, while the other two apply to the height regime from the surface up to $86 \, \text{km}$, within which the argument of the computation is geopotential. Consequently, expressions for computing pressure as a function of geopotential altitude stems from the integration of eq (5) after replacing $g \cdot dZ$ by its equivalent $g'_0 \cdot dH$ from eq (16), and after replacing the ratio $M/T$ by its equivalent, $M_b/T_{m,b}$ in accordance with eq (22). Two forms result from this integration, one for the case when $L_{m,b}$ for a particular layer is not equal to zero, and the other when the value $L_{m,b}$ is zero. The first of these two expressions is
+この標準のさまざまな高さ体制で圧力を計算するために、3つの異なる式が使用されている。これらの式の1つは 86 km を超える高さに適用され、他の2つは表面から 86 km までの高さ体制に適用され、計算の引数は地勢ポテンシャルである。その結果、地勢ポテンシャル高度の関数として圧力を計算するための式は、式 (16) から $g \cdot dZ$ をその同等の $g'_0 \cdot dH$ に置き換えて、また式 (22) に従って比 $M/T$ をその同等の $M_b/T_{m,b}$ に置き換えた後、式 (5) の積分から生じる。2つの形式はこの積分から生じ、1つは特定の層の $L_{m,b}$ がゼロに等しくない場合、もう1つは値 $L_{m,b}$ がゼロである場合である。これらの2つの式の最初の式は
 
 \[
 P = P_b \cdot \frac{T_{m,b}}{T_{m,b} + L_{m,b} \cdot (H - H_b)} \exp \left[ \frac{g'_0 \cdot M_b}{R^* \cdot L_{m,b}} \right] \tag{33a}
 \]
 
-and the latter is 
+後者は
 
 \[
 P = P_b \cdot \exp \left[ \frac{-g'_0 \cdot M_b \cdot (H - H_b)}{R^* \cdot T_{m,b}} \right] \tag{33b}
 \]
 
-In these equations, $g'_0$, $M_b$, and $R^*$ are each defined single-valued constants, while $L_{m,b}$ and $H_b$ are each defined multi-valued constants in accordance with the value of $b$ as indicated in table 4. The quantity $T_{m,b}$ is a multi-valued constant dependent on $L_{m,b}$ and $H_b$. The reference-level value for $P_b$ for $b = 0$ is the defined sea-level value, $P_0 = 101325.0 \, \text{N/m}^2$ (1013.250 mb). Values of $P_b$ for $b = 1$ through $b = 6$ are obtained from the application of the appropriate member of the pair eq (33a) and (33b) for the case when $H = H_{b+1}$.
+これらの式では、$g'_0$、$M_b$、および $R^*$ はそれぞれ定義された単一値定数であり、$L_{m,b}$ と $H_b$ はそれぞれ表 4 に示されている $b$ の値に従って定義された多値定数である。量 $T_{m,b}$ は、$L_{m,b}$ と $H_b$ に依存する多値定数である。$b = 0$ の場合の $P_b$ の基準レベル値は、定義された海面値である $P_0 = 101325.0 \, \text{N/m}^2$ (1013.250 mb) である。$b = 1$ から $b = 6$ までの $P_b$ の値は、$H = H_{b+1}$ の場合の式 (33a) と (33b) のペアの適切なメンバーの適用から得られる。
 
-These two equations yield the pressure for any desired geopotential altitude from sea level to $H_t$, where $H_t$ is the geopotential altitude corresponding to the geometric altitude $Z_t = 86 \, \text{km}$. Pressures for $H$ from $0$ to $-5 \, \text{km}$ may also be computed from eq (33a) when subscript $b$ is zero.
+これらの2つの方程式は、海面から $H_t$ までの任意の望ましい地勢ポテンシャル高度の圧力を生成する。ここで、$H_t$ は幾何学的高度 $Z_t = 86 \, \text{km}$ に対応する地勢ポテンシャル高度である。$0$ から $-5 \, \text{km}$ までの $H$ の圧力も、添え字 $b$ がゼロの場合、式 (33a) から計算できる。
 
-For $Z$ equal to $86 \, \text{km}$ and above, the value of pressure is computed as a function of geometric altitude $Z$, and involves the altitude profile of kinetic temperature $T$ rather than that of $T_m$, in an expression in which the total pressure $P$ is equal to the sum of the partial pressures for the individual species as expressed by eq (3). Thus, for $Z = 86$ to $1000 \, \text{km}$,
+$Z$ が $86 \, \text{km}$ 以上に等しい場合、圧力の値は幾何学的高度 $Z$ の関数として計算され、式 (3) で表される個々の種の分圧の合計に全圧 $P$ が等しい式で、$T_m$ ではなく、運動温度 $T$ の高度プロファイルに関与する。したがって、$Z = 86$ から $1000 \, \text{km}$ の場合、
 
 \[
 P = \Sigma P_i = \Sigma n_i \cdot k \cdot T = \frac{\Sigma n_i \cdot R^* \cdot T}{N_A} \tag{33c}
 \]
 
-In this expression:
+この式では
 
 \begin{itemize}
-    \item $k$ = the Boltzmann constant, defined in table 2a,
-    \item $T$ = $T(Z)$ defined in eq (25), (27), (29), and (31) for successive layers, and
-    \item $\Sigma n_i$ = the sum of the number densities of the individual gas species comprising the atmosphere at altitude $Z$ above $86 \, \text{km}$, as described below.
+    \item $k$ = ボルツマン定数、表 2a で定義、
+    \item $T$ = $T(Z)$ は、連続する層の式 (25)、(27)、(29)、および (31) で定義、および
+    \item $\Sigma n_i$ = 上記で説明したように、86 km を超える高度 $Z$ で大気を構成する個々のガス種の数密度の合計。
 \end{itemize}
 
-Neither $n_i$, the number densities of individual species, nor $\Sigma n_i$, the sum of the individual number densities, is known directly. Consequently, pressures above $86 \, \text{km}$ cannot be computed without first determining $n_i$ for each of the significant gas species.
-
-
-
+個々の種族の数密度である $n_i$ も、個々の数密度の合計である $\Sigma n_i$ も、直接的には知られていない。その結果、86 km を超える圧力は、重要なガス種のそれぞれについて $n_i$ を最初に決定しないと計算できない。
 \end{document}
